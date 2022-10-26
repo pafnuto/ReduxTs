@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css';
+import ProductList from './components/list';
+import ProductForm from './components/form'
 
 function App() {
   return (
-    <h1>hui</h1>
+  <div className="App">
+    <ProductList />
+    <ProductForm />
+  </div>
   );
 }
 
