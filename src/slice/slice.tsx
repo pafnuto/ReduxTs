@@ -19,6 +19,16 @@ import { IProducts } from '../types'
       price: 20,
       id: 3,
     },
+    {
+      title: 'Лук',
+      price: 30,
+      id: 4,
+    },
+    {
+      title: 'Чеснок',
+      price: 40,
+      id: 5,
+    },
   ]
   
   const prodSlice = createSlice({

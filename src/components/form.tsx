@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { addProducts} from '../slice/slice'
 import { IProducts } from '../types'
 import { useAppDispatch } from "../store/hooks"
+import '../App.css'
 
 const ProductForm = () => {
     const dispatch = useAppDispatch()
@@ -25,15 +26,14 @@ const ProductForm = () => {
   
     return (
       <>
-        <h2>Добавь продукт в тележку</h2>
+        <h2 className="text-2xl">Добавь продукт в список</h2>
         <form onSubmit={handleSubmit}>
           <input type='text' placeholder="Название продукта" name='title' value={product.title} onChange={handleChange} />
           <input type='number' placeholder="Цена" name="price" value={product.price} onChange={handleChange} />
           <input type='text' placeholder="Штрихкод" name='id' value={product.id} onChange={handleChange} />
-          <button type='submit'>Add</button>
+          <button className='border border-sky-500' type='submit'>Добавить</button>
         </form>
       </>
-  
     )
   }
 

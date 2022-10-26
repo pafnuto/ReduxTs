@@ -5,7 +5,7 @@ const ProductList = () => {
   const products = useSelector(getProductsSelector)
 
   return (
-    <div>
+    <div className='columns-2'>
       <h1>Список продуктов</h1>
       {products.map(prod => {
         return(
